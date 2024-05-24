@@ -1,0 +1,50 @@
+.navbar {
+    background-color: #54F98D !important;
+}
+.logout-button{
+    background-color: #1FA055;
+    border:#87E990;
+}
+
+.heading-title {
+    color: #000000;
+    font-size: 88px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: -4px;
+    align-items: center;
+}
+.spaced-top-5 {
+    margin-top: 5em;
+}
+
+.spaced-top-2 {
+    margin-top: 2em;
+}
+
+.btn-custom {
+    font-weight: bold;
+    background-color: #01A368;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 2px solid #01A368;
+    color: #FFFFFF;
+}
+
+.btn-custom:hover {
+    background-color: #FFFFFF;
+    color: #822739;
+}
+.btn-custom-reverse:hover {
+    background-color: #FF4901;
+    color: #FFFFFF;
+}
+
+.brand-logo {
+    color: #FFFFFF;
+    font-size: 1.6em;
+    font-weight: bold;
+}

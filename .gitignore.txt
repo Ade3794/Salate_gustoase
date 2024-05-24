@@ -1,0 +1,9 @@
+Fișiere generate de Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+Virtual environment/ idea
+venv/
+.idea
