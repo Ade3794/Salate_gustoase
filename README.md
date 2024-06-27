@@ -1,5 +1,5 @@
 # SalateGustoase14
-SalateGustoase14 este un magazin online specializat în salate, dezvoltată in cadrul modului de python, folosind limbajul de programare python, baza de date sqlite3 si framework-ul web Django.
+SalateGustoase14 este un magazin online specializat în salate, dezvoltată in cadrul modulului de Python, folosind limbajul de programare Python, baza de date Sqlite3 si framework-ul web Django.
 ## 1. ![Salate_gustoase_satioase_nutritive.png](photo_app%2FSalate_gustoase_satioase_nutritive.png)Screenshot salate_gustoase14
 ![Alt Text](photo_app/market_place.png)
 - [Watch presentation video](https://drive.google.com/file/d/1gRboYIhbqFBcdNGgBmp5iSrH3BEpYcl1/view)
