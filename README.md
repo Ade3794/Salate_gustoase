@@ -9,6 +9,7 @@ Meniu Navigare (Navbar/Header): Un meniu de navigare simplu și intuitiv permite
 Homepage Personalizată: este personalizată pentru a oferi o experiență plăcută utilizatorilor, include un carusel dinamic cu imagini pentru a prezenta magazinul online.
 Gestionare produse:  utilizatori pot naviga pe pagina de produse  si ulterior pe pagina de produs pentru a vedea detalii despre acesta
 Sistem de Autentificare: Login, logout, register pentru utilizatori, cu opțiunea de autentificare a utilizatorului si ulterior posibilitatea de adăugare produse in coșul de cumpărături. 
+Formular de contact
 
 ## 3. Tehnologii si Tool-uri utilizate
 Python: limbaj de programare;
@@ -20,7 +21,7 @@ HTML, CSS crearea paginii web și stilizarea acestora;
 ### 4. Instrucțiuni de Instalare
 Clonează acest repositori local:
 ``
-git clone https://github.com/BDCristina/Sweets_Market_Place.git``
+git clone https://github.com/Ade3794/Salate_gustoase.git``
 Crează un mediu virtual:
 ``
 python -m venv venv``
@@ -30,7 +31,7 @@ pip install -r requirements.txt``
 ## 5. Utilizarea aplicației se va face pornind serverul de dezvoltare folosind:
 ``
 python manage.py runserver ``
-Accesează aplicația într-un browser la adresa http://localhost:8000.
+Accesează aplicația într-un browser la adresa http://127.0.0.1:8000/.
 
 ## 6. Structura proiect
 - folder salate_gustoase14 = folder radacina al proiectului
