@@ -6,12 +6,17 @@ from django.urls import reverse_lazy
 from django.views.generic.edit import FormView
 from .forms import ContactForm
 
+
+
+def contact(request):
+    return render(request, 'contact.html')
 class ContactView(FormView):
     template_name = 'connection/contact.html'
     form_class = ContactForm
     success_url = reverse_lazy('connection')
 
-def contact_view(request):
+def contact(request):
+
     errors = []
     if request.method == 'POST':
         if not request.POST.get('subject', ''):

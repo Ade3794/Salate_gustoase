@@ -31,3 +31,14 @@ pip install -r requirements.txt``
 ``
 python manage.py runserver ``
 Accesează aplicația într-un browser la adresa http://localhost:8000.
+
+## 6. Structura proiect
+- folder salate_gustoase14 = folder radacina al proiectului
+- folder salate_gustoase14_app = folder in care cream modele, formulare, definim rute
+- folderele photo_app, product_images, static = contin imaginile aplicatiei
+- folderul account contine functionalitatile de login, logout
+- folderul connection contine formularul de contact
+- folderul venv = mediu virtual
+
+## 7. Sintaxa fisiere md
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

@@ -25,7 +25,7 @@ urlpatterns = [
     path('', include('salate_gustoase14_app.urls')),
     path('', include('django.contrib.auth.urls')),
     path('account/', include('account.urls')),
-    path('', include('connection.urls')),
+    # path('', include('connection.urls')),
  ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_URL)

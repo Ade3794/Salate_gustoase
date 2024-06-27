@@ -1,46 +1,41 @@
 {% block navbar %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid container">
-    <a class="navbar-brand" href="/">PYTA14</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand brand-logo" href="/">PYTA14</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="{% url 'salate_gustoase14_app:products' %}">Produse</a>
-        <a class="nav-link" href="/">Contact</a>
-      </div>
-      <div class="navbar-nav">
-        <form class="nav-link" action="{% url 'contact' %}" method="POST">
-          {% csrf_token %}
-          <button class="btn btn-link p-0" type="submit" title="Contact">
-            <i class="fas fa-envelope"></i>
-          </button>
-        </form>
-        {% if user.is_authenticated %}
-          <a class="nav-link" href="#" title="Deautentificare"> Bună, {{ user.username }}
-            <i class="fas fa-user"></i>
-          </a>
-          <form class="nav-link" action="{% url 'logout' %}" method="POST">
-            {% csrf_token %}
-            <button class="btn btn-link p-0" type="submit" title="Logout">
-              <i class="fas fa-sign-out-alt"></i>
-            </button>
-          </form>
-          <a class="nav-link" href="#" title="Coșul tău">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        {% else %}
-          <a class="nav-link" href="{% url 'account:login' %}" title="Autentificare">
-            <i class="fas fa-sign-in-alt"></i>
-          </a>
-        {% endif %}
+    <div class="d-flex">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'salate_gustoase14_app:products' %}">Products</a>
+          <a class="nav-link active" aria-current="page" href="/">Contact</a>
+          {% if user.is_authenticated %}
+            <a class="nav-link" href="#" title="Deautentificare"> Hello, {{user.username}}
+              <i class="fas fa-user"></i>
+            </a>
+            <form class="nav-link" action="{% url 'logout' %}" method="POST">
+              {% csrf_token %}
+              <button class="logout-button" type="submit">
+                <i class="fas fa-sign-out-alt"></i>
+              </button>
+            </form>
+            <a class="nav-link" href="#" title="Coșul tău">
+              <i class="fa-solid fa-shopping-cart"></i>
+            </a>
+          {% else %}
+            <a class="nav-link" href="{% url 'account:login' %}" title="Autentificare">
+              <i class="fa-solid fa-sign-in-alt"></i>
+            </a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
 </nav>
 {% endblock %}
+
 
 
 
